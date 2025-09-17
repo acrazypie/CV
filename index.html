@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Elisa Genesio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a2e0e9d6d4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <h1>Elisa Genesio</h1>
+        <p class="tagline">AR/VR Developer • Game Designer • Tech Explorer</p>
+        <div class="contacts">
+          <a href="mailto:genesio.elisa0@gmail.com">✉️</a>
+          <a href="https://www.linkedin.com/in/matteo-genesio/">💼</a>
+          <a href="https://linktr.ee/gen3sio">🔗</a>
+        </div>
+        <!-- 🌙 Toggle Light/Dark -->
+        <button id="theme-toggle">🌙</button>
+      </div>
+    </header>
+
+    <script>
+      const toggleBtn = document.getElementById("theme-toggle");
+      const body = document.body;
+
+      // Carica preferenza salvata
+      if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark");
+        toggleBtn.textContent = "☀️";
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        body.classList.toggle("dark");
+        if (body.classList.contains("dark")) {
+          toggleBtn.textContent = "☀️"; // mostra sole in dark mode
+          localStorage.setItem("theme", "dark");
+        } else {
+          toggleBtn.textContent = "🌙"; // mostra luna in light mode
+          localStorage.setItem("theme", "light");
+        }
+      });
+    </script>
+
+    <main class="container">
+      <!-- Esperienze -->
+      <section>
+        <h2>Esperienze</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Sviluppatore AR (Stage)</h3>
+            <span>AEC Soluzioni srl • 02/2025 - 03/2025 • Torino</span>
+            <p>
+              App Android in Unity per riconoscimento immagini con dati in
+              realtà aumentata.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Sviluppatore (Stage)</h3>
+            <span>Fluxlab • 02/2024 - 05/2024 • Torino</span>
+            <p>
+              Supporto a progetti digitali e multimediali in laboratorio
+              creativo.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Animatore (Volontario)</h3>
+            <span>Parrocchia Gesù Redentore • Estati 2018 - 2020</span>
+            <p>Attività educative e di animazione per bambini e ragazzi.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Educazione -->
+      <section>
+        <h2>Istruzione</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>ITS ICT Foundation</h3>
+            <span>AR/VR and Game Developer • 09/2022 - 07/2024</span>
+            <p>Voto: 85/100</p>
+          </div>
+          <div class="card">
+            <h3>Università di Torino</h3>
+            <span>Lingue e Letterature Asiatiche • 10/2020 - 04/2023</span>
+            <p>Rinuncia agli studi</p>
+          </div>
+          <div class="card">
+            <h3>IIS Primo Levi</h3>
+            <span>Diploma Perito Informatico • 2014 - 2020</span>
+            <p>Voto: 75/100</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section>
+        <h2>Lingue</h2>
+        <div class="skills">
+          <span>🇮🇹 Italiano</span>
+          <span>🇬🇧 Inglese</span>
+          <span>🇯🇵 Giapponese</span>
+        </div>
+      </section>
+
+      <!-- Certificazioni -->
+      <section>
+        <h2>Certificazioni</h2>
+        <ul class="certs">
+          <li>📌 Sicurezza Lavoratori - Rischio Basso (Feb 2023)</li>
+          <li>📌 Sicurezza Generale (Gen 2023)</li>
+          <li>📌 GESE B2.2 - Trinity College (Ago 2019)</li>
+          <li>📌 Cambridge English ESOL B1 (Giu 2018)</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 • Made with ❤️ by Elisa Genesio</p>
+    </footer>
+  </body>
+</html>

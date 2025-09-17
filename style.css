@@ -1,0 +1,286 @@
+:root {
+  --color-bg: #f4f6f9;
+  --color-text: #333;
+  --color-header-gradient-start: #6a11cb;
+  --color-header-gradient-end: #2575fc;
+  --color-header-text: #fff;
+  --color-h2: #222;
+  --color-h2-underline: #2575fc;
+  --color-card-bg: #fff;
+  --color-card-title: #2575fc;
+  --color-card-span: #777;
+  --color-skills-bg: #2575fc;
+  --color-skills-text: #fff;
+  --color-certs-bg: #fff;
+  --color-certs-shadow: rgba(0, 0, 0, 0.05);
+  --color-footer-bg: #222;
+  --color-footer-text: #fff;
+  --color-card-shadow: rgba(0, 0, 0, 0.08);
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Futura";
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* Hero */
+header {
+  background: url("toon_pc_2.png") no-repeat center/cover;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 5rem 1rem;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  overflow: hidden;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(38, 38, 38, 0.55); /* overlay scuro trasparente */
+  z-index: 0;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.contacts a {
+  font-size: 1.6rem;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.contacts a:hover {
+  transform: scale(2) translateY(-5px);
+  opacity: 0.8;
+}
+
+/* Sections */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  position: relative;
+  color: var(--color-h2);
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--color-h2-underline);
+  margin-top: 0.5rem;
+  border-radius: 2px;
+}
+
+/* Cards */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background: var(--color-card-bg);
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px var(--color-card-shadow);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: var(--color-card-title);
+  margin-bottom: 0.5rem;
+}
+
+.card span {
+  font-size: 0.9rem;
+  color: var(--color-card-span);
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.skills span {
+  background: var(--color-skills-bg);
+  color: var(--color-skills-text);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Certifications */
+.certs {
+  list-style: none;
+  margin-top: 1rem;
+}
+.certs li {
+  background: var(--color-certs-bg);
+  margin-bottom: 0.7rem;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px var(--color-certs-shadow);
+  font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: var(--color-footer-bg);
+  color: var(--color-footer-text);
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* 🔘 Toggle button */
+#theme-toggle {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: var(--color-skills-text);
+  font-size: 1.3rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s, transform 0.3s;
+}
+#theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: scale(1.1);
+}
+
+/* 🌑 Dark mode */
+body.dark {
+  background: #121212;
+  color: #fff;
+}
+
+body.dark header {
+  color: #fff;
+}
+
+body.dark .container section h2 {
+  color: var(--color-skills-text);
+}
+
+body.dark .card {
+  background: #1e1e1e;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+body.dark .card h3 {
+  color: #7aa7ff;
+}
+
+body.dark .skills span {
+  background: #7aa7ff;
+  color: #000;
+}
+
+body.dark .certs li {
+  background: #1e1e1e;
+  color: #ddd;
+}
+
+body.dark footer {
+  background: #000;
+  color: #aaa;
+}
+
+/* 📱 Mobile view */
+@media (max-width: 768px) {
+  header {
+    padding: 3rem 1rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-position: center top; /* mostra bene l’immagine sul telefono */
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .contacts a {
+    font-size: 1.2rem;
+    margin: 0 0.3rem;
+  }
+
+  .container {
+    width: 95%;
+    padding: 1rem 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* le card diventano a colonna */
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .skills {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .skills span {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+    padding: 0.8rem;
+  }
+}
