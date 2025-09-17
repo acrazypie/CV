@@ -1,14 +1,14 @@
 # 🎨 acrazypie/CV
 
-A sleek, responsive [personal CV](https://acrazypie.github.io/CV/) crafted with HTML & CSS.
+My [personal CV](https://acrazypie.github.io/CV/) for everyone to see.
 
 ---
 
 ## 🧩 Features
 
-* **Responsive Design**: Looks great on desktops, tablets, and smartphones.
-* **Customizable Layout**: Easy to tweak styles and content to fit your vibe.
-* **Minimalist Aesthetic**: Clean, modern design with a focus on readability.
+* **Responsive Design**: display: flex;
+* **Customizable Layout**: i made it, i can change it.
+* **Minimalist Aesthetic**: im not good at graphics.
 
 ---
 
@@ -16,6 +16,7 @@ A sleek, responsive [personal CV](https://acrazypie.github.io/CV/) crafted with 
 
 * HTML5
 * CSS3
+* JAVASCRIPT 
 
 ---
 
