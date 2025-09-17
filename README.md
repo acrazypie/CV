@@ -22,9 +22,11 @@ A sleek, responsive [personal CV](https://acrazypie.github.io/CV/) crafted with 
 ## 🎯 To Do
 
 * [ ] Add a profile picture
+* [ ] Add a portfolio page
 * [ ] Include downloadable PDF version
+* [ ] Fix contacts emoji links on mobile
 * [x] Implement dark mode toggle
-* [ ] Integrate with GitHub Actions for auto-deployment
+* [x] Integrate with GitHub Actions for auto-deployment
 
 ---
 
