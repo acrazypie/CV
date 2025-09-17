@@ -1,6 +1,6 @@
 # 🎨 acrazypie/CV
 
-A sleek, responsive personal CV crafted with HTML & CSS.
+A sleek, responsive [personal CV](https://acrazypie.github.io/CV/) crafted with HTML & CSS.
 
 ---
 
