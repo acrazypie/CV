@@ -34,7 +34,7 @@ body {
 
 /* Hero */
 header {
-  background: url("/static/img/toon_pc_2.png") no-repeat center/cover; /* immagine di sfondo */
+  background: url("toon_pc_2.png") no-repeat center/cover; /* immagine di sfondo */
   position: relative;
   color: #fff;
   text-align: center;
