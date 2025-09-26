@@ -33,5 +33,5 @@ My [personal CV](https://acrazypie.github.io/CV/) for everyone to see.
 
 ## 👩‍💻 Author
 
-**Elisa** – Developer & Designer
+**Elisa** – Developer & Designer\
 [![Maintained by acrazypie](https://img.shields.io/badge/maintained%20by-acrazypie-9cf?logo=github&style=flat-square)](https://linktr.ee/gen3sio)
